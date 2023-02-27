@@ -1,0 +1,25 @@
+import { Outlet, NavLink } from 'react-router-dom';
+import Header from '@/components/Header';
+const About = () => {
+  return (
+    <> 
+      <Header>
+        <h1>About page</h1>
+      </Header>
+      <h1>About Page</h1>
+      <div className="about">
+        <ul className="about_list">
+          <li>
+            <NavLink to='about-app'>About app</NavLink>
+          </li>
+          <li>
+            <NavLink to='about-developer'>About developer</NavLink>
+          </li>
+        </ul>
+      </div>
+      <Outlet></Outlet>
+    </>
+  )
+}
+
+export default About;
